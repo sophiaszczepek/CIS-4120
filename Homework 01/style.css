@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.iphone-border {
+    width: 410px; 
+    height: 765px; 
+    border: 10px solid black; 
+    border-radius: 30px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+    background-color: white; 
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+.dynamic-island {
+    width: 160px; 
+    height: 30px; 
+    background-color: black; 
+    border-radius: 20px; 
+    position: absolute; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8c4c3;
+    padding: 20px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.location {
+    position: absolute; /* Positioning the location text within the header */
+    top: 60px; /* Adjust this value to position it under the Dynamic Island */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    font-size: 18px; /* Adjust this value to make the text smaller */
+    color: black;
+    text-align: center;
+    font-weight: 400; /* Optionally change the font weight */
+}
+
+.date, .location, .day {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.date {
+    flex: 1;
+    color: black;
+    text-align: left;
+}
+
+.location {
+    flex: 2;
+    color: black;
+    text-align: center;
+}
+
+.day {
+    flex: 1;
+    color: black;
+    text-align: right;
+}
+
+.day-forecast .weather-icon {
+    position: absolute; /* Position the icon absolutely inside the forecast container */
+    right: 10px; /* Move the icon to the right */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%);
+}
+
+.weather-container {
+    padding: 10px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.temperature .current-temp {
+    margin-right: 5px;
+}
+
+.temperature .range-temp {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.appointments {
+    font-size: 14px;
+    color: black;
+}
+
+.hourly-weather {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b0d5f0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.hour {
+    text-align: center;
+    flex: 1;
+    border-right: 1px solid black; 
+}
+
+.hour:last-child {
+    border-right: none; 
+}
+
+.hour p {
+    margin: 5px 0;
+    background-color: #b0d5f0;
+    margin: 0; 
+    padding: 10px; 
+}
+
+.week-weather {
+    height: 400px; 
+    overflow-y: auto; 
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #b0d5f0;
+    padding: 0px;
+    margin: 0; 
+}
+
+.day-forecast {
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.forecast-content {
+    display: flex; 
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center; /* Vertically center the icon with the text */
+    padding-right: 20px; 
+}
+
+.weather-icon {
+    right: 50px;
+}
+
+.day-forecast span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
